@@ -12,7 +12,7 @@ class Dashlog {
   protected header: Record<string, string>;
 
   constructor(apiKey: string) {
-    this.baseUrl = "https://api.dashlog.app";
+    this.baseUrl = "https://api.dashlog.app/v1";
     this.header = {
       "Content-Type": "application/json",
       Authorization: "Bearer " + apiKey,
